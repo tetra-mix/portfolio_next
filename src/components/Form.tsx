@@ -4,18 +4,18 @@ import { VStack, FormControl, Input, Textarea, Button, Center } from '@yamada-ui
 import { useState } from 'react';
 
 export const Form = () => {
-
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
+    const [title, setTitle] = useState<string>("");
     const [message, setMessage] = useState<string>("");
+    const [textMessage, setTextMessage] = useState<string>("");
 
-    const handleClick = () => {
-        console.log(
-            name,
-            email,
-            message
-        )
+    const handleClick = async () => {
+        console.log(name,email,title,message);
+
+        //Emailを送信するプログラム
     }
+
 
     return (
         <>
@@ -26,6 +26,9 @@ export const Form = () => {
                 <FormControl label="E-メールアドレス" pt={4} pl={8} >
                     <Input type="email" placeholder="sample-user@exsample.com" onChange={(e) => { setEmail(e.target.value); }} />
                 </FormControl>
+                <FormControl label="タイトル" pl={8}>
+                    <Input placeholder="〇〇について" onChange={(e) => { setTitle(e.target.value) }} />
+                </FormControl>
                 <FormControl label="お問い合わせ内容" pt={4} pl={8}>
                     <Textarea variant="filled" placeholder="お問い合わせ内容の本文" size="lg" h={250} onChange={(e) => { setMessage(e.target.value); }} />
                 </FormControl>
@@ -35,7 +38,6 @@ export const Form = () => {
                     送信
                 </Button>
             </Center>
-
         </>
     );
 }
