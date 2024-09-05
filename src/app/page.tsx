@@ -3,14 +3,13 @@ import { Footer } from '../components/Footer';
 import { Title } from '../components/Title';
 import { UIProvider, Center, Box, DiscList, ListItem } from "@yamada-ui/react";
 import { HistoryItem } from '../components/HistoryItem';
-
 const Home: React.FC = () => {
 
   return (
     <UIProvider>
       <Header />
-      <div className="h-dvh w-dvw bg-blue-400">
-        <Box padding="40vh 20vh">
+      <div className="min-h-dvh w-dvw bg-blue-400">
+        <div className='pt-96 pl-16 pr-16 lx:pl-72 lx:pr-72'>
           <Center>
             <h1 className="font-kosugi text-6xl text-white">Ryoma Yoshitaka</h1>
           </Center>
@@ -19,10 +18,10 @@ const Home: React.FC = () => {
               My Engineering History
             </div>
           </Center>
-        </Box>
+        </div>
       </div>
-      <div className="h-dvh w-dvw bg-sky-100">
-        <Box padding="40vh 20vh">
+      <div className="min-h-dvh w-dvw bg-sky-100">
+        <div className='pt-72 pl-16 pr-16 lx:pl-72 lx:pr-72'>
           <Center>
             <h1 className="text-6xl font-concert text-gray-800">About this site</h1>
           </Center>
@@ -31,10 +30,10 @@ const Home: React.FC = () => {
               このサイトは吉髙僚眞のポートフォリオサイトです。
             </div>
           </Center>
-        </Box>
+        </div>
       </div>
-      <div className="h-auto w-dvw bg-blue-100">
-        <Box padding="20vh 20vh">
+      <div className="min-h-dvh w-dvw bg-blue-100">
+        <div className='pt-32 pl-16 pr-16 lx:pl-72 lx:pr-72'>
           <Center>
             <h1 className="text-6xl font-concert text-gray-800">My History</h1>
           </Center>
@@ -75,7 +74,7 @@ const Home: React.FC = () => {
               </HistoryItem>
             </div>
           </Center>
-        </Box>
+        </div>
       </div>
       <Footer />
     </UIProvider>

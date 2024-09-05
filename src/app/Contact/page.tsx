@@ -1,19 +1,16 @@
 import React from 'react';
-import { Header } from '../../components/Header';
-import { Footer } from '../../components/Footer';
-import { Title } from '../../components/Title';
 import { Form } from '../../components/Form';
-import { UIProvider } from "@yamada-ui/react";
+import { Box } from "@yamada-ui/react";
+import { PageTemplate } from '../../components/PageTemplate';
 
 const Contact: React.FC = () => {
 
   return (
-    <UIProvider>
-      <Header />
-        <Title title="Contact" />
-        <Form />
-      <Footer />
-    </UIProvider>
+    <PageTemplate title="Contact">
+      <Box>
+        <Form/>
+      </Box>
+    </PageTemplate>
   );
 };
 export default Contact;
