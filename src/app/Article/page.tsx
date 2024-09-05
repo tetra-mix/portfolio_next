@@ -1,28 +1,19 @@
 import React from 'react';
-import { Header } from '../../components/Header';
-import { Footer } from '../../components/Footer';
-import { Title } from '../../components/Title';
-import { UIProvider, Box, Center } from "@yamada-ui/react";
+import { Box, Center } from "@yamada-ui/react";
+import { PageTemplate } from "../../components/PageTemplate";
+import { ArticlesList } from '../../components/ArticlesList';
 
 const Article: React.FC = () => {
 
   return (
-    <UIProvider>
-      <Header />
-      <div className="h-dvh w-dvw bg-sky-100">
-        <Box padding="40vh 20vh">
-          <Center>
-            <h1 className="text-6xl font-concert text-gray-800">Article</h1>
-          </Center>
-          <Center>
-            <div className="pt-8 text-md text-gray-800">
-              記事一覧
-            </div>
-          </Center>
-        </Box>
-      </div>
-      <Footer />
-    </UIProvider>
+    <PageTemplate title="Article">
+      <Center>
+        <div className="p-4 m-16 rounded-lg text-xl">
+          私が書いた主に技術系の記事一覧です。
+        </div>
+      </Center>
+      <ArticlesList/>
+    </PageTemplate>
   );
 };
 

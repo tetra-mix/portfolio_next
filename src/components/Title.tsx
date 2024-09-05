@@ -7,11 +7,11 @@ export type TitleProps  = {
 
 export const Title = (props: TitleProps) => {
     return (
-            <Box padding={5}>
-                <Heading size="2xl" >{props.title}</    Heading>
+            <Box padding={16}>
                 {
-                    props.text && <Text fontSize="md">{props.text}</Text>
+                    props.text && <Text fontSize="xl">{props.text}</Text>
                 }
+                <Heading size="2xl" >{props.title}</    Heading>
             </Box>
     )
 

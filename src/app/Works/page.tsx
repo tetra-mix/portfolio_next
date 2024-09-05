@@ -1,17 +1,22 @@
-import {Header} from '../../components/Header';
-import {Footer} from '../../components/Footer';
+
 import { WorksList } from '../../components/WorksList';
-import { Title } from '../../components/Title';
-import { UIProvider } from "@yamada-ui/react";
+import { Box, Center } from "@yamada-ui/react";
+import { PageTemplate } from '../../components/PageTemplate';
+
 
 const Works: React.FC = () => {
     return (
-        <UIProvider>
-            <Header />
-            <Title title="Works" />
-            <WorksList />
-            <Footer />
-        </UIProvider>
+        <PageTemplate title="Works">
+            <Center>
+                <div className="p-4 m-16 rounded-lg text-xl">
+                    私が今まで作ってきた作品/参加した作品です。
+                    かなり昔に作ったものもあり至らないところもあると思いますが、ご容赦ください。
+                </div>
+            </Center>
+            <div className='pt-4 pb-16'>
+                <WorksList />
+            </div>
+        </PageTemplate>
     );
 }
 

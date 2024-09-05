@@ -26,3 +26,97 @@ header {
   font-weight: 400;
   font-style: normal;
 }
+.parse{
+  background-color: white;
+  width: 100%;
+  padding: 64px;
+  height: auto;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.parse h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+  border-bottom: solid 2px black;
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+
+.parse h2{
+  font-weight: 400;
+  font-size: 2rem;
+  border-left: solid 8px black;
+  padding-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.parse h3{
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.parse h4{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.parse h5{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.parse p{
+  padding: 8px;
+}
+
+.parse table{
+  margin-left: 2%;
+  width: 98%;
+  margin-right: 2%;
+}
+
+.parse table td {
+  border: solid 1px black;
+}
+.parse table th {
+  border: solid 1px black;
+}
+
+.parse blockquote{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  margin-left: 16px;
+  border-left: solid 4px black;
+}
+
+.parse ul {
+  list-style: inside;
+  list-style-type: disc;
+  padding: 16px;
+}
+
+.parse ol {
+  list-style: inside;
+  list-style-type: decimal;
+  padding:16px;
+}
+
+
+.parse pre {
+  margin: 64px;
+  padding: 32px;
+  color:white;
+  background-color: rgb(20, 20, 20);
+  border-radius: 20px;
+}
+
+.parse div {
+  
+}
