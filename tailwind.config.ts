@@ -8,11 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily: {
+        concert: ["Concert One", 'sans-serif'],
+        kosugi: ["Kosugi Maru", 'sans-serif'],
+        dot: ["DotGothic16", 'sans-serif']
+      }
     },
+    
   },
   plugins: [],
 };
