@@ -1,11 +1,6 @@
 import { Html, Heading, Button, Head, Section, Text, Hr} from "@react-email/components";
+import { EmailProps } from "./type";
 
-type EmailProps = {
-  email: string;
-  title: string;
-  name: string;
-  message: string;
-}
 
 const ClientEmail = (props: EmailProps) => {
   return (
