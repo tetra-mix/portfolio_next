@@ -1,6 +1,6 @@
 'use client'
 
-import { VStack, FormControl, Input, Textarea, Button, Center } from '@yamada-ui/react';
+import { VStack, FormControl, Input, Textarea, Button, Center,Text } from '@yamada-ui/react';
 import { useState } from 'react';
 
 export const Form = () => {
@@ -12,7 +12,7 @@ export const Form = () => {
 
     const handleClick = async () => {
         console.log(name,email,title,message);
-
+        setTextMessage("送信できません。仕様的に...")
         //Emailを送信するプログラム
     }
 
@@ -20,6 +20,9 @@ export const Form = () => {
     return (
         <>
             <VStack padding="20">
+                <Center>
+                    <Text>{textMessage}</Text>
+                </Center>
                 <FormControl label="お名前" pl={8}>
                     <Input placeholder="名無 太郎" onChange={(e) => { setName(e.target.value) }} />
                 </FormControl>

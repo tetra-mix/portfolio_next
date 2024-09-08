@@ -1,4 +1,4 @@
-import { Flex, Heading, HStack, UIProvider, Spacer, Menu, MenuButton, MenuList, MenuItem, Button } from '@yamada-ui/react';
+import { Flex, Heading, HStack, Spacer, Menu, MenuButton, MenuList, MenuItem, Button } from '@yamada-ui/react';
 import Link from 'next/link';
 
 export const Header = () => (

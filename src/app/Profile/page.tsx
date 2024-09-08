@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Center, Grid, GridItem, Text } from "@yamada-ui/react";
+import { Center, Grid, GridItem, Text } from "@yamada-ui/react";
 import Image from "next/image";
 import { PageTemplate } from '../../components/PageTemplate';
 import ProfileImage from '../../assets/profile.jpeg';

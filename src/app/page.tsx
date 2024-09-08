@@ -1,7 +1,6 @@
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { Title } from '../components/Title';
-import { UIProvider, Center, Box, DiscList, ListItem } from "@yamada-ui/react";
+import { UIProvider, Center, DiscList, ListItem } from "@yamada-ui/react";
 import { HistoryItem } from '../components/HistoryItem';
 const Home: React.FC = () => {
 

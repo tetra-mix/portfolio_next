@@ -1,6 +1,6 @@
 
 import { WorksList } from '../../components/WorksList';
-import { Box, Center } from "@yamada-ui/react";
+import { Center } from "@yamada-ui/react";
 import { PageTemplate } from '../../components/PageTemplate';
 
 
