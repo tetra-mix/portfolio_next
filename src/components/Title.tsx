@@ -1,4 +1,4 @@
-import { Box, Heading, UIProvider, Text } from '@yamada-ui/react';
+import { Box, Heading, Text } from '@yamada-ui/react';
 
 export type TitleProps  = {
     title: string;

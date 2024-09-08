@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Center } from "@yamada-ui/react";
+import { Center } from "@yamada-ui/react";
 import { PageTemplate } from "../../components/PageTemplate";
 import { ArticlesList } from '../../components/ArticlesList';
 

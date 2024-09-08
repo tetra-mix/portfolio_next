@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Work, WorkProps } from './Work';
-import { HStack } from '@yamada-ui/react';
 
 export const WorksList = () => {
     const [posts, setPosts] = useState<WorkProps[]>([]);
@@ -23,8 +22,8 @@ export const WorksList = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
-            {posts.map(post => (
-                <div>
+            {posts.map((post,index) => (
+                <div key={index} >
                     <Work title={post.title} subtitle={post.subtitle} body={post.body} image={post.image} link={post.link} />
                 </div>
             ))}

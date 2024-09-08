@@ -22,8 +22,8 @@ export const ArticlesList = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
-            {posts.map(post => (
-                <div>
+            {posts.map((post, index) => (
+                <div key={index}>
                     <Article id={post.id} title={post.title} date={post.date} body={post.body} image={post.image} />
                 </div>
             ))}
