@@ -9,9 +9,9 @@ export const Header = () => (
           <Spacer />
           <HStack display={{ base: 'flex', sm: 'none' }} gap="md" >
             <Link href="/">Home</Link>
+            <Link href="/Profile">Profile</Link>
             <Link href="/Article">Article</Link>
             <Link href="/Works">Works</Link>
-            <Link href="/Links">Links</Link>
             <Link href="/Contact">Contact</Link>
           </HStack>
 
@@ -22,9 +22,9 @@ export const Header = () => (
 
             <MenuList>
               <MenuItem><Link href="/">Home</Link></MenuItem>
+              <MenuItem><Link href="/Profile">Profile</Link></MenuItem>
               <MenuItem><Link href="/Article">Article</Link></MenuItem>
               <MenuItem><Link href="/Works">Works</Link></MenuItem>
-              <MenuItem><Link href="/Links">Links</Link></MenuItem>
               <MenuItem><Link href="/Contact">Contact</Link></MenuItem>
             </MenuList>
           </Menu>
