@@ -29,7 +29,7 @@ header {
 .parse{
   background-color: white;
   width: 100%;
-  padding: 64px;
+  padding: 32px;
   height: auto;
   border-radius: 20px;
   font-size: 1.2rem;
@@ -110,8 +110,8 @@ header {
 
 
 .parse pre {
-  margin: 64px;
-  padding: 32px;
+  margin-top: 32px;
+  padding: 16px;
   color:white;
   background-color: rgb(20, 20, 20);
   border-radius: 20px;

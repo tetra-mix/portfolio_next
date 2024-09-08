@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <UIProvider>
       <Header />
       <div className="min-h-dvh w-dvw bg-blue-400">
-        <div className='pt-96 pl-16 pr-16 lx:pl-72 lx:pr-72'>
+        <div className='pt-64 lg:pt-96 pl-16 pr-16 lx:pl-72 lx:pr-72'>
           <Center>
             <h1 className="font-kosugi text-6xl text-white">Ryoma Yoshitaka</h1>
           </Center>
@@ -20,21 +20,21 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className="min-h-dvh w-dvw bg-sky-100">
-        <div className='pt-72 pl-16 pr-16 lx:pl-72 lx:pr-72'>
+        <div className='pt-48 lg:pt-72 pl-4 pr-4 md:pl-16 md:pr-16 lx:pl-72 lx:pr-72'>
           <Center>
-            <h1 className="text-6xl font-concert text-gray-800">About this site</h1>
+            <h1 className="text-5xl md:text-6xl font-concert text-gray-800">About this site</h1>
           </Center>
           <Center>
-            <div className="pt-8 text-md text-gray-800">
+            <div className="pt-8 pl-4 pr-4 md:pr-0 md:pl-0 text-md text-gray-800">
               このサイトは吉髙僚眞のポートフォリオサイトです。
             </div>
           </Center>
         </div>
       </div>
       <div className="min-h-dvh w-dvw bg-blue-100">
-        <div className='pt-32 pl-16 pr-16 lx:pl-72 lx:pr-72'>
+        <div className='pt-32 pl-4 pr-4 md:pl-16 md:pr-16lx:pl-72 lx:pr-72'>
           <Center>
-            <h1 className="text-6xl font-concert text-gray-800">My History</h1>
+            <h1 className="text-5xl md:text-6xl font-concert text-gray-800">My History</h1>
           </Center>
           <Center padding="30px 0">
             <div className="w-full lg:w-1/2">

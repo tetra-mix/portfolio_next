@@ -8,7 +8,7 @@ const Works: React.FC = () => {
     return (
         <PageTemplate title="Works">
             <Center>
-                <div className="p-4 m-16 rounded-lg text-xl">
+                <div className="p-4 mt-16 mb-16 lg:m-16 rounded-lg text-md lg:text-xl">
                     私が今まで作ってきた作品/参加した作品です。
                     かなり昔に作ったものもあり至らないところもあると思いますが、ご容赦ください。
                 </div>

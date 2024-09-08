@@ -3,10 +3,12 @@ import Link from "next/link";
 
 export const Footer = () => (
     <footer className="m-0">
-        <Flex gap="md" w="full" backgroundColor="blue.400" color="white" px={20} py={2} >
-          <Text>©2024 Yoshitaka Ryoma </Text>
+        <Flex gap="sm" w="full" backgroundColor="blue.400" color="white" px={{base: 20, sm: 4}} py={2} >
+          <Text fontSize={{base:"md", sm:"xs"}}>©2024 Yoshitaka Ryoma </Text>
           <Spacer />
-          <Link href="/Contact" color="white" style={{borderBottom: "solid 1px white"}}>お問い合わせはこちらから</Link>
+          <Link className='border-b border-white'  href="/Contact" color="white">
+            <Text fontSize={{base:"md", sm:"xs"}}>お問い合わせはこちらから</Text>
+          </Link>
         </Flex>
     </footer>
 );
