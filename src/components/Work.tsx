@@ -19,7 +19,7 @@ export type WorkProps = {
 
 export const Work = (props: WorkProps) => {
     return (
-        <Card variant="elevated" bgColor="white" w={{base:"100%", sm:"25vw" }}m="2" h="575px" >
+        <Card variant="elevated" bgColor="white" w={{base:"95%"}}m="2" h="575px" >
             <CardBody>
                 <Heading size="sm">
                     {props.subtitle}

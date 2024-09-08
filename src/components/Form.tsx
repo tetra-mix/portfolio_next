@@ -18,21 +18,21 @@ export const Form = () => {
 
 
     return (
-        <>
-            <VStack padding="20">
+        <div className='z-0'>
+            <VStack padding={{base:30, sm:4}}>
                 <Center>
                     <Text>{textMessage}</Text>
                 </Center>
-                <FormControl label="お名前" pl={8}>
+                <FormControl label="お名前">
                     <Input placeholder="名無 太郎" onChange={(e) => { setName(e.target.value) }} />
                 </FormControl>
-                <FormControl label="E-メールアドレス" pt={4} pl={8} >
+                <FormControl label="E-メールアドレス" pt={4}  >
                     <Input type="email" placeholder="sample-user@exsample.com" onChange={(e) => { setEmail(e.target.value); }} />
                 </FormControl>
-                <FormControl label="タイトル" pl={8}>
+                <FormControl label="タイトル">
                     <Input placeholder="〇〇について" onChange={(e) => { setTitle(e.target.value) }} />
                 </FormControl>
-                <FormControl label="お問い合わせ内容" pt={4} pl={8}>
+                <FormControl label="お問い合わせ内容" pt={4}>
                     <Textarea variant="filled" placeholder="お問い合わせ内容の本文" size="lg" h={250} onChange={(e) => { setMessage(e.target.value); }} />
                 </FormControl>
             </VStack>
@@ -41,6 +41,6 @@ export const Form = () => {
                     送信
                 </Button>
             </Center>
-        </>
+        </div>
     );
 }

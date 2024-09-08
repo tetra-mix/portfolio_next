@@ -19,12 +19,12 @@ export const Article = (props: ArticlesProps) => {
 
     return (
         <Link href={url} >
-            <Card variant="elevated" bgColor="white" w={{ base: "100%", sm: "25vw" }} m="2" h="500px" >
+            <Card variant="elevated" bgColor="white" w={{ base: "95%" }} m="2" h="350px" >
                 <CardBody>
                     <Heading size="sm">
                         {props.date}
                     </Heading>
-                    <Heading size="lg">
+                    <Heading size="md">
                         {props.title}
                     </Heading>
                     <Center>
