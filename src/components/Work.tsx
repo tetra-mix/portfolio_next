@@ -41,24 +41,24 @@ export const Work = (props: WorkProps) => {
                 <Text>
                     {
                         props.link?.Youtube ? (
-                            <a href={props.link.Youtube}>
-                                <Icon as={FaYoutube} mr="2" color="blue.800" />
+                            <a href={props.link.Youtube} className="mr-4">
+                                <Icon as={FaYoutube} mr="1" color="blue.800" />
                                 <span className='text-blue-800'>YouTube</span>
                             </a>
                         ) : <></>
                     }
                     {
                         props.link?.Github ? (
-                            <a href={props.link.Github}>
-                                <Icon as={FaGithub} mr="2" color="blue.800" />
+                            <a href={props.link.Github} className="mr-4">
+                                <Icon as={FaGithub} mr="1" color="blue.800" />
                                 <span className='text-blue-800'>Github</span>
                             </a>
                         ) : <></>
                     }
                     {
                         props.link?.Website ? (
-                            <a href={props.link.Website}>
-                                <Icon as={CgWebsite} mr="2" color="blue.800"/>
+                            <a href={props.link.Website} className="mr-4">
+                                <Icon as={CgWebsite} mr="1" color="blue.800"/>
                                 <span className='text-blue-800'>Website</span>
                             </a>
                         ) : <></>

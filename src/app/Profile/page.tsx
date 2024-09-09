@@ -1,11 +1,11 @@
 import React from 'react';
-import { Center, Grid, GridItem, Text, Box} from "@yamada-ui/react";
+import { Center, Grid, GridItem, Text, Box, Link } from "@yamada-ui/react";
 import Image from "next/image";
 import { PageTemplate } from '../../components/PageTemplate';
 import ProfileImage from '../../assets/profile.jpeg';
 import { FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-import { FaSquareXTwitter, FaYoutube, FaDiscord } from "react-icons/fa6";
+import { FaSquareXTwitter, FaYoutube, FaDiscord, FaFacebook } from "react-icons/fa6";
 
 const Links: React.FC = () => {
   return (
@@ -24,52 +24,64 @@ const Links: React.FC = () => {
             </Center>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.500" >
-            <Center pt="2">
-              <FaGithub size="64" color="#4387f4" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="blue.500">Github</Text>
-            </Center>
+            <Link href="https://github.com/tetra-mix">
+              <Center pt="2">
+                <FaGithub size="64" color="#4387f4" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="blue.500">Github</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.700">
-            <Center pt="2">
-              <FaSquareXTwitter size="64" color="#0c59d4" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="blue.700">X/Twitter</Text>
-            </Center>
+            <Link href="https://x.com/arqxiEVhwYb5i3G">
+              <Center pt="2">
+                <FaSquareXTwitter size="64" color="#0c59d4" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="blue.700">X/Twitter</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.900">
-            <Center pt="2">
-              <FaYoutube size="64" color="#07357d" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="blue.900">Youtube</Text>
-            </Center>
+            <Link href="https://www.youtube.com/@ryouma_yoshitaka">
+              <Center pt="2">
+                <FaYoutube size="64" color="#07357d" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="blue.900">Youtube</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.900">
-            <Center pt="2">
-              <FaYoutube size="64" color="#032230" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="sky.900">Youtube</Text>
-            </Center>
+            <Link href='https://www.facebook.com/ryouma.yoshitaka.1'>
+              <Center pt="2">
+                <FaFacebook size="64" color="#032230" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="sky.900">Facebook</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.700">
-            <Center pt="2">
-              <FaDiscord size="64" color="#096995" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="sky.700">Discord</Text>
-            </Center>
+            <Link href='https://discordapp.com/users/1078302551524515840'>
+              <Center pt="2">
+                <FaDiscord size="64" color="#096995" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="sky.700">Discord</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.500">
-            <Center pt="2">
-              <CiMail size="64" color="#0da2e7" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="sky.500">E-mail</Text>
-            </Center>
+            <Link href="/Contact">
+              <Center pt="2">
+                <CiMail size="64" color="#0da2e7" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="sky.500">E-mail</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={6} rowSpan={2} w="full" minH="4xs" rounded="md" bg="white" borderWidth="1px" borderColor="sky.100">
             <Text p="2">コメント。何か書く</Text>
@@ -93,52 +105,64 @@ const Links: React.FC = () => {
             </Center>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.500" >
-            <Center pt="2">
-              <FaGithub size="64" color="#4387f4" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="blue.500">Github</Text>
-            </Center>
+            <Link href="https://github.com/tetra-mix">
+              <Center pt="2">
+                <FaGithub size="64" color="#4387f4" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="blue.500">Github</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.700">
-            <Center pt="2">
-              <FaSquareXTwitter size="64" color="#0c59d4" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="blue.700">X/Twitter</Text>
-            </Center>
+            <Link href="https://x.com/arqxiEVhwYb5i3G">
+              <Center pt="2">
+                <FaSquareXTwitter size="64" color="#0c59d4" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="blue.700">X/Twitter</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.900">
-            <Center pt="2">
-              <FaYoutube size="64" color="#07357d" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="blue.900">Youtube</Text>
-            </Center>
+            <Link href="https://www.youtube.com/@ryouma_yoshitaka">
+              <Center pt="2">
+                <FaYoutube size="64" color="#07357d" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="blue.900">Youtube</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.900">
-            <Center pt="2">
-              <FaYoutube size="64" color="#032230" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="sky.900">Youtube</Text>
-            </Center>
+            <Link href='https://www.facebook.com/ryouma.yoshitaka.1'>
+              <Center pt="2">
+                <FaFacebook size="64" color="#032230" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="sky.900">Facebook</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.700">
-            <Center pt="2">
-              <FaDiscord size="64" color="#096995" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="sky.700">Discord</Text>
-            </Center>
+            <Link href='https://discordapp.com/users/1078302551524515840'>
+              <Center pt="2">
+                <FaDiscord size="64" color="#096995" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="sky.700">Discord</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.500">
-            <Center pt="2">
-              <CiMail size="64" color="#0da2e7" />
-            </Center>
-            <Center>
-              <Text fontSize="lg" color="sky.500">E-mail</Text>
-            </Center>
+            <Link href="/Contact">
+              <Center pt="2">
+                <CiMail size="64" color="#0da2e7" />
+              </Center>
+              <Center>
+                <Text fontSize="lg" color="sky.500">E-mail</Text>
+              </Center>
+            </Link>
           </GridItem>
           <GridItem colSpan={3} rowSpan={2} w="full" minH="4xs" rounded="md" bg="white" borderWidth="1px" borderColor="sky.100">
             <Text p="2">コメント。何か書く</Text>
