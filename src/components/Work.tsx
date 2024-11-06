@@ -1,6 +1,7 @@
-import { Image, Center, Card, Box, CardBody, CardFooter, Heading, Text, Icon } from '@yamada-ui/react';
+import { Center, Card, Box, CardBody, CardFooter, Heading, Text, Icon } from '@yamada-ui/react';
 import { FaYoutube, FaGithub } from 'react-icons/fa';
 import { CgWebsite } from "react-icons/cg";
+import ExportedImage from 'next-image-export-optimizer';
 
 
 export type WorkProps = {
@@ -29,7 +30,7 @@ export const Work = (props: WorkProps) => {
                 </Heading>
                 <Center>
                     <Box minW="50%" maxW="75%" h="275px">
-                        <Image src={props.image.url} alt={props.title} maxWidth="100%" maxH="375px" rounded="md" />
+                        <ExportedImage src={props.image.url} alt={props.title} width={100} height={100} style={{maxWidth: "100%", width: '110%', maxHeight: "375px", borderRadius:"12px"}} />
                     </Box>
                 </Center>
 
