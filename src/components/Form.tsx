@@ -1,7 +1,12 @@
 'use client'
 
-import { VStack, FormControl, Input, Textarea, Button, Center,Text } from '@yamada-ui/react';
+import { VStack, FormControl, Input, Textarea, Button, Center, Text } from '@yamada-ui/react';
 import { useState } from 'react';
+import { render } from "@react-email/components";
+import ClientEmail from '../../emails/toclient';
+import OwnerEmail from '../../emails/toowner';
+import Plunk from "@plunk/node";
+import SendDiscordMessage from './Discord';
 
 export const Form = () => {
     const [name, setName] = useState<string>("");
@@ -11,15 +16,44 @@ export const Form = () => {
     const [textMessage, setTextMessage] = useState<string>("");
 
     const handleClick = async () => {
-        console.log(name,email,title,message);
-        setTextMessage("送信できません。仕様的に...")
+        console.log(name, email, title, message);
+        setTextMessage("送信中です...");
+
+        const plunk = new Plunk(process.env.NEXT_PUBLIC_PLUNK_SEKLET_KEY || "");
+
+
         //Emailを送信するプログラム
+        const clientEmailHtml = await render(<ClientEmail email={email} title={title} message={message} name={name} />);
+        const ownerEmailHtml = await render(<OwnerEmail email={email} title={title} message={message} name={name} />);
+
+        plunk.emails.send({
+            to: email,
+            subject: "お問い合わせ内容の確認",
+            body: clientEmailHtml,
+        });
+
+        plunk.emails.send({
+            to: process.env.NEXT_PUBLIC_OWNER_EMAIL || "",
+            subject: "お問い合わせがありました",
+            body: ownerEmailHtml,
+        });
+
+        SendDiscordMessage({ name: name, email: email, title: title, message: message })
+            .then((res) => {
+                setTextMessage("送信が完了しました。");
+                console.log(res)
+            })
+            .catch((e) => {
+                setTextMessage("エラーが発生しました。");
+                console.log(e)
+            });
+
     }
 
 
     return (
         <div className='z-0'>
-            <VStack padding={{base:30, sm:4}}>
+            <VStack padding={{ base: 30, sm: 4 }}>
                 <Center>
                     <Text>{textMessage}</Text>
                 </Center>
