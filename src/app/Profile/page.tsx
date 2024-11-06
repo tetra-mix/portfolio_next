@@ -1,6 +1,7 @@
 import React from 'react';
 import { Center, Grid, GridItem, Text, Box, Link } from "@yamada-ui/react";
-import Image from "next/image";
+//import Image from "next/image";
+import ExportedImage from 'next-image-export-optimizer';
 import { PageTemplate } from '../../components/PageTemplate';
 import ProfileImage from '../../assets/profile.jpeg';
 import { FaGithub } from "react-icons/fa";
@@ -13,7 +14,7 @@ const Links: React.FC = () => {
       <Box display={{ base: "block", sm: "none" }}>
         <Grid w="full" templateColumns="repeat(6, 1fr)" templateRows="repeat(4, 1fr)" gap="md" padding={4} margin={2}>
           <GridItem colSpan={3} rowSpan={3} w="full" minH="4xs" rounded="md" bg="white" borderWidth="1px" borderColor="sky.100">
-            <Image src={ProfileImage} alt="プロフィール画像" style={{ borderRadius: 16 }} />
+            <ExportedImage src={ProfileImage} alt="プロフィール画像" style={{ borderRadius: 16 }} />
           </GridItem>
           <GridItem colSpan={3} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="1px" borderColor="blue.100" >
             <Center>
@@ -94,7 +95,7 @@ const Links: React.FC = () => {
       <Box display={{ base: 'none', sm: 'block' }}>
         <Grid w="full" templateColumns="repeat(3, 1fr)" templateRows="repeat(8, 1fr)" gap="md" padding={4} margin={2}>
           <GridItem colSpan={3} rowSpan={3} w="full" minH="4xs" rounded="md" bg="white" borderWidth="1px" borderColor="sky.100">
-            <Image src={ProfileImage} alt="プロフィール画像" style={{ borderRadius: 16 }} />
+            <ExportedImage src={ProfileImage} alt="プロフィール画像" style={{ width:"auto", borderRadius: 16 }} />
           </GridItem>
           <GridItem colSpan={3} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="1px" borderColor="blue.100" >
             <Center>
