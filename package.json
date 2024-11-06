@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "email-dev": "email dev",
-    "build": "next build",
+    "build": "next build  && next-image-export-optimizer",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,6 +16,7 @@
     "axios": "^1.7.7",
     "html-react-parser": "^5.1.15",
     "next": "14.2.8",
+    "next-image-export-optimizer": "^1.15.1",
     "react": "^18",
     "react-dom": "^18",
     "react-email": "^3.0.1",
