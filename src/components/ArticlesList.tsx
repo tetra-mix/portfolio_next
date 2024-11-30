@@ -11,7 +11,7 @@ export const ArticlesList = () => {
         const fetchPosts = async () => {
             const res = await axios.get('https://blog-test-dev.microcms.io/api/v1/articles', {
                 headers: {
-                    'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_DISCORD_WEBHOOK_URL || "",
+                    'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_MICROCMS_API_KEY || "",
                 }
             });
             setPosts(res.data.contents);

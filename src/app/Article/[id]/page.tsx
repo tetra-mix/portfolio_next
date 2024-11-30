@@ -10,7 +10,7 @@ import parse from "html-react-parser";
 export const generateStaticParams = async () => {
     const res = await axios.get('https://blog-test-dev.microcms.io/api/v1/articles', {
         headers: {
-            'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_DISCORD_WEBHOOK_URL || ""
+            'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_MICROCMS_API_KEY || ""
         }
     });
 
@@ -24,7 +24,7 @@ export const generateStaticParams = async () => {
 async function fetchArticle(id: string) {
     const res = await axios.get(`https://blog-test-dev.microcms.io/api/v1/articles/${id}`, {
         headers: {
-            'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_DISCORD_WEBHOOK_URL || ""
+            'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_MICROCMS_API_KEY || ""
         }
     });
     const post:ArticlesProps = res.data;
