@@ -34,8 +34,8 @@ const Links: React.FC = () => {
               </Center>
             </Link>
           </GridItem>
-          <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.700">
-            <Link href="https://x.com/arqxiEVhwYb5i3G">
+          <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="mzd" bg="white" borderWidth="2px" borderColor="blue.700">
+            <Link href="https://x.com/yoshitaka_ryoma">
               <Center pt="2">
                 <FaSquareXTwitter size="64" color="#0c59d4" />
               </Center>
@@ -75,7 +75,7 @@ const Links: React.FC = () => {
             </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.500">
-            <Link href="/Contact">
+            <Link href="./Contact">
               <Center pt="2">
                 <CiMail size="64" color="#0da2e7" />
               </Center>
@@ -116,7 +116,7 @@ const Links: React.FC = () => {
             </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="blue.700">
-            <Link href="https://x.com/arqxiEVhwYb5i3G">
+            <Link href="https://x.com/yoshitaka_ryoma">
               <Center pt="2">
                 <FaSquareXTwitter size="64" color="#0c59d4" />
               </Center>
@@ -156,7 +156,7 @@ const Links: React.FC = () => {
             </Link>
           </GridItem>
           <GridItem colSpan={1} rowSpan={1} w="full" minH="4xs" rounded="md" bg="white" borderWidth="2px" borderColor="sky.500">
-            <Link href="/Contact">
+            <Link href="./Contact">
               <Center pt="2">
                 <CiMail size="64" color="#0da2e7" />
               </Center>
