@@ -166,7 +166,7 @@ const Links: React.FC = () => {
             </Link>
           </GridItem>
           <GridItem colSpan={3} rowSpan={2} w="full" minH="4xs" rounded="md" bg="white" borderWidth="1px" borderColor="sky.100">
-            <Text p="2">コメント。何か書く</Text>
+            <Text p="2">鈴鹿高専電子情報工学科の吉髙 僚眞です。よろしくお願いします。いろんな技術を触っています。電子工作などもやっています。</Text>
           </GridItem>
         </Grid>
       </Box>
