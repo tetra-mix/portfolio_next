@@ -1,6 +1,6 @@
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { UIProvider, Center, DiscList, ListItem } from "@yamada-ui/react";
+import { UIProvider, Center, DiscList, ListItem, Text } from "@yamada-ui/react";
 import { HistoryItem } from '../components/HistoryItem';
 const Home: React.FC = () => {
 
@@ -66,9 +66,20 @@ const Home: React.FC = () => {
               <HistoryItem year="2024年">
                 <DiscList>
                   <ListItem>高専ビジネスコンテストin鈴鹿高専でギーク賞を受賞</ListItem>
-                  <ListItem>NIT Toba Hackathon 企業賞 受賞</ListItem>
+                  <ListItem>NIT Toba Hackathon 2024 企業賞 受賞</ListItem>
                   <ListItem>株式会社プロッセルでインターンを開始</ListItem>
                   <ListItem>2024年度 未踏ジュニアに採択</ListItem>
+                  <ListItem>未踏ジュニア スーパークリエータ認定</ListItem>
+                </DiscList>
+              </HistoryItem>
+              <HistoryItem year="2025年">
+                <DiscList>
+                  <ListItem>Web×IotメーカーズチャレンジPLUS 2024 三重大会 最優秀賞 受賞</ListItem>
+                  <ListItem>高専ビジネスコンテストin鈴鹿高専2024 企業賞 受賞</ListItem>
+                  <ListItem>KOSEN TECH FES DAO型ハッカソン 発展賞 & 1位 受賞</ListItem>
+                  <ListItem>NIT Toba Hackathon 2025 企業賞 受賞</ListItem>
+                  <ListItem>Web×IotメーカーズチャレンジPLUS 2024 グランプリ 受賞</ListItem>
+                  <ListItem>Kloudハッカソン #6 最優秀賞 受賞</ListItem>
                 </DiscList>
               </HistoryItem>
             </div>
