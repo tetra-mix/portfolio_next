@@ -79,7 +79,7 @@ const Home: React.FC = () => {
                   <ListItem>KOSEN TECH FES DAO型ハッカソン 発展賞 & 1位 受賞</ListItem>
                   <ListItem>NIT Toba Hackathon 2025 企業賞 受賞</ListItem>
                   <ListItem>Web×IotメーカーズチャレンジPLUS 2024 グランプリ 受賞</ListItem>
-                  <ListItem>Kloudハッカソン #6 最優秀賞 受賞</ListItem>
+                  <ListItem>Kloudハッカソン#6 最優秀賞 受賞</ListItem>
                 </DiscList>
               </HistoryItem>
             </div>
