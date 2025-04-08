@@ -1,6 +1,5 @@
-import { Html, Heading, Button, Head, Section, Text, Hr} from "@react-email/components";
-import { EmailProps } from "./type";
-
+import { Html, Heading, Button, Head, Section, Text, Hr } from '@react-email/components';
+import { EmailProps } from './type';
 
 const ClientEmail = (props: EmailProps) => {
   return (
@@ -13,12 +12,8 @@ const ClientEmail = (props: EmailProps) => {
       </Section>
       <Hr className="m-[16px] border-t-2 border-[#cccccc]" />
       <Heading as="h2">お問い合わせ内容：</Heading>
-      <Section>
-        件名：{props.title}
-      </Section>
-      <Section>
-        {props.message}
-      </Section>
+      <Section>件名：{props.title}</Section>
+      <Section>{props.message}</Section>
       <Hr className="m-[16px] border-t-2 border-[#cccccc]" />
       <Section>
         <Text>お問い合わせ内容に関して修正等がある場合はこちらのメールに返信してください。</Text>
@@ -32,4 +27,4 @@ const ClientEmail = (props: EmailProps) => {
   );
 };
 
-export default ClientEmail
+export default ClientEmail;

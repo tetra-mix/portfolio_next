@@ -34,3 +34,56 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Linting and Formatting
+
+このプロジェクトでは、コードの品質を維持するためにESLintとPrettierを使用しています。
+
+### ESLint
+
+ESLintは、JavaScriptとTypeScriptのコードを静的に解析し、問題を特定するツールです。
+
+コードをリントするには：
+
+```bash
+pnpm lint
+```
+
+### Prettier
+
+Prettierは、コードフォーマッターで、一貫したコードスタイルを維持します。
+
+主な設定：
+
+- セミコロン: 使用する
+- 引用符: シングルクォート
+- タブ幅: 2スペース
+- 最大行長: 100文字
+- 末尾カンマ: ES5準拠
+
+コードを手動でフォーマットするには、以下のコマンドを追加してpackage.jsonのscriptsセクションに記述することができます：
+
+```bash
+pnpm format
+```
+
+または、VSCodeなどのエディタでPrettier拡張機能を使用して、保存時に自動フォーマットすることもできます。
+
+### VSCodeでの設定
+
+VSCodeでESLintとPrettierを使用するには、以下の拡張機能をインストールすることをお勧めします：
+
+1. ESLint
+2. Prettier - Code formatter
+
+そして、`.vscode/settings.json`に以下の設定を追加することで、保存時に自動フォーマットが有効になります：
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
