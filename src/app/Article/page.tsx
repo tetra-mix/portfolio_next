@@ -1,10 +1,9 @@
 import React from 'react';
-import { Center } from "@yamada-ui/react";
-import { PageTemplate } from "../../components/PageTemplate";
+import { Center } from '@yamada-ui/react';
+import { PageTemplate } from '../../components/PageTemplate';
 import { ArticlesList } from '../../components/ArticlesList';
 
 const Article: React.FC = () => {
-
   return (
     <PageTemplate title="Article">
       <Center>
@@ -12,7 +11,7 @@ const Article: React.FC = () => {
           私が書いた主に技術系の記事一覧です。
         </div>
       </Center>
-      <ArticlesList/>
+      <ArticlesList />
     </PageTemplate>
   );
 };
